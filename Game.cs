@@ -9,7 +9,7 @@ namespace NarratorSideProject
     {
         public void Run()
         {
-            TypeOutWords("Uh... Hello there stranger. Nice to meet you", 100);
+            
             
         }
 
