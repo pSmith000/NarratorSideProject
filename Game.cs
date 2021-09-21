@@ -9,21 +9,29 @@ namespace NarratorSideProject
     {
         public void Run()
         {
+            /*
             TypeOutWords("LOADING...", 200);
             Console.Clear();
             TypeOutWords("LOADING...", 200);
             Console.Clear();
             TypeOutWords("LOADING...", 200);
             Console.Clear();
+            */
+            Console.Write("Loading ");
 
             for (int i = 0; i < 101; i++)
             {
                 Random rnd = new Random();
-                int num = rnd.Next(1, 50);
-                Console.Write("Loading " + i + "%");
+                int num = rnd.Next(1, 75);
+                Console.Write(i + "%");
                 Thread.Sleep(num);
-                Console.Clear();
+                Console.SetCursorPosition(7, 0);
+                Console.Write(" ");
             }
+
+            Thread.Sleep(1000);
+
+            Console.Clear();
 
             TypeOutWords("Uh...\nHello! My name is Steven and I will be your Narrator!\n", 100);
             Thread.Sleep(500);
